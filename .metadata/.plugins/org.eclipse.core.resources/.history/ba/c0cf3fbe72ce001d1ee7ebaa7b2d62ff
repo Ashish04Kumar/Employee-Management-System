@@ -1,0 +1,373 @@
+package com.user.authorization.userdetails;
+import org.junit.Test;
+import org.apache.log4j.Logger;
+public class UserDetailsImplTest {
+  
+	private Logger log = Logger.getLogger(this.getClass());
+ 
+  @Test  
+    public void getFirstName(){  
+		try {
+			log.info("Starting execution of getFirstName");
+String expectedValue=""; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+String actualValue=userdetailsimpl.getFirstName();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void setFirstName(){  
+		try {
+			log.info("Starting execution of setFirstName");
+ String firstName=""; 
+ 
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+userdetailsimpl.setFirstName( firstName);
+assertTrue(true);
+		} catch (Exception exception) {
+			log.error("Exception in execution ofsetFirstName-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void getLastName(){  
+		try {
+			log.info("Starting execution of getLastName");
+String expectedValue=""; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+String actualValue=userdetailsimpl.getLastName();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void setLastName(){  
+		try {
+			log.info("Starting execution of setLastName");
+ String lastName=""; 
+ 
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+userdetailsimpl.setLastName( lastName);
+assertTrue(true);
+		} catch (Exception exception) {
+			log.error("Exception in execution ofsetLastName-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void getEmail(){  
+		try {
+			log.info("Starting execution of getEmail");
+String expectedValue=""; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+String actualValue=userdetailsimpl.getEmail();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void setEmail(){  
+		try {
+			log.info("Starting execution of setEmail");
+ String email=""; 
+ 
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+userdetailsimpl.setEmail( email);
+assertTrue(true);
+		} catch (Exception exception) {
+			log.error("Exception in execution ofsetEmail-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void getManagerId(){  
+		try {
+			log.info("Starting execution of getManagerId");
+Integer expectedValue=0; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+Integer actualValue=userdetailsimpl.getManagerId();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void setManagerId(){  
+		try {
+			log.info("Starting execution of setManagerId");
+ Integer managerId=0; 
+ 
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+userdetailsimpl.setManagerId( managerId);
+assertTrue(true);
+		} catch (Exception exception) {
+			log.error("Exception in execution ofsetManagerId-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void getAuthorities(){  
+		try {
+			log.info("Starting execution of getAuthorities");
+GrantedAuthority> expectedValue = null; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+GrantedAuthority> actualValue=userdetailsimpl.getAuthorities();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void setAuthorities(){  
+		try {
+			log.info("Starting execution of setAuthorities");
+ Collection<? extends = null; 
+ 
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+userdetailsimpl.setAuthorities( extends);
+assertTrue(true);
+		} catch (Exception exception) {
+			log.error("Exception in execution ofsetAuthorities-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void getPassword(){  
+		try {
+			log.info("Starting execution of getPassword");
+String expectedValue=""; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+String actualValue=userdetailsimpl.getPassword();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void setPassword(){  
+		try {
+			log.info("Starting execution of setPassword");
+ String password=""; 
+ 
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+userdetailsimpl.setPassword( password);
+assertTrue(true);
+		} catch (Exception exception) {
+			log.error("Exception in execution ofsetPassword-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void getUsername(){  
+		try {
+			log.info("Starting execution of getUsername");
+String expectedValue=""; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+String actualValue=userdetailsimpl.getUsername();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void isAccountNonLocked(){  
+		try {
+			log.info("Starting execution of isAccountNonLocked");
+boolean expectedValue=false; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+boolean actualValue=userdetailsimpl.isAccountNonLocked();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void isCredentialsNonExpired(){  
+		try {
+			log.info("Starting execution of isCredentialsNonExpired");
+boolean expectedValue=false; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+boolean actualValue=userdetailsimpl.isCredentialsNonExpired();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void isEnabled(){  
+		try {
+			log.info("Starting execution of isEnabled");
+boolean expectedValue=false; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+boolean actualValue=userdetailsimpl.isEnabled();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void isAccountNonExpired(){  
+		try {
+			log.info("Starting execution of isAccountNonExpired");
+boolean expectedValue=false; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+boolean actualValue=userdetailsimpl.isAccountNonExpired();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void getUserId(){  
+		try {
+			log.info("Starting execution of getUserId");
+int expectedValue=0; 
+   
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+int actualValue=userdetailsimpl.getUserId();
+	  log.info("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+	  System.out.println("Expected Value="+ expectedValue +" . Actual Value="+actualValue);
+assertEquals(expectedValue, actualValue);
+		} catch (Exception exception) {
+			log.error("Exception in execution of execute1GetAllLogFromFirstMovF-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+ 
+  @Test  
+    public void setUserId(){  
+		try {
+			log.info("Starting execution of setUserId");
+ int userId=0; 
+ 
+ User userc = null; 
+ 
+ UserDetailsImpl userdetailsimpl  =new UserDetailsImpl( userc); 
+userdetailsimpl.setUserId( userId);
+assertTrue(true);
+		} catch (Exception exception) {
+			log.error("Exception in execution ofsetUserId-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
+}

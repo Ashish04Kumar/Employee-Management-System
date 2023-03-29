@@ -1,0 +1,31 @@
+package com.user.usermanagement.model;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import java.time.LocalDate;
+
+@Entity(name = "task_details")
+@Getter
+@Setter
+public class TaskDetails {
+
+    @Id
+    @GeneratedValue
+    private int taskId;
+    private String taskName;
+    private int assignedTo;
+    private int assignedBy;
+
+    private String status;
+
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate updatedAt;
+
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate createdAt;
+}

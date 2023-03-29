@@ -1,0 +1,28 @@
+jwtSecret: userTest
+jwtExpiration: 1800000
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: user-authorization
+  datasource:
+    url: jdbc:mysql://localhost:3306/user
+    username: root
+    password: Admin@2022
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  

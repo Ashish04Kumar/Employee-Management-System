@@ -1,0 +1,33 @@
+package com.user.usermanagement.model;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class User {
+
+    private Integer userId;
+    private String email;
+    @JsonIgnore
+    private String password;
+    private String firstName;
+    private String lastName;
+
+    private Role roleId;
+
+    private String role;
+    private Integer managerId;
+
+    public User(){}
+
+    public User(Integer userId, String firstName, String lastName, String email, String encode, int managerId) {
+        this.userId = userId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = encode;
+        this.managerId = managerId;
+    }
+}
